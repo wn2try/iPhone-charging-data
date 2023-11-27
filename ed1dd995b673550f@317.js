@@ -1,5 +1,5 @@
 function _1(md){return(
-md`# iPhone 15 Pro 充电数据`
+md`# iPhone 15 Pro 充电数据 -- 小米35w + 苹果3a线`
 )}
 
 function _chargingPlot(Plot,plotData,tip50,tip90,tip100,tipMinPower,plotBattery){return(
