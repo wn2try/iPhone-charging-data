@@ -194,8 +194,8 @@ Plot.plot({
   x: {line: true, nice: true, label: "电流（A）", labelArrow: false, labelAnchor: "center"},
   y: {domain: [4,9], grid: true, line: true, nice: true, label: "电压（V）", labelAnchor: "center", labelArrow: false},
   marks: [
-    Plot.dot(rawData, { filter: (d) => d.power > 0, x: "current", y: "voltage", r: 2, symbol: "circle", stroke: "darkcyan", strokeWidth: 0.8, tip: {anchor: "top-right", textPadding: 4, strokeOpacity: 0.1, fill: "darkcyan", fillOpacity: 0.1}, title: (d) => `苹果3A线 ○\n电压：${d.voltage}V\n电流：${d.current}A`}),
-    Plot.dot(rawHuawei, { filter: (d) => d.power > 0, x: "current", y: "voltage", r: 2, symbol: "triangle2", stroke: "darkgoldenrod", strokeWidth: 0.8, tip: {anchor: "top-left", textPadding: 4, strokeOpacity: 0.1, fill: "darkgoldenrod", fillOpacity: 0.1}, title: (d) => `华为3A线 △\n电压：${d.voltage}V\n电流：${d.current}A` }),
+    Plot.dot(rawData, { filter: (d) => d.power > 0, x: "current", y: "voltage", r: 2, symbol: "circle", stroke: "darkcyan", strokeWidth: 0.8, tip: {anchor: "top-right", textPadding: 4, strokeOpacity: 0.1, fill: "darkcyan", fillOpacity: 0.1}, title: (d) => `华为25W ○\n电压：${d.voltage}V\n电流：${d.current}A`}),
+    Plot.dot(rawHuawei, { filter: (d) => d.power > 0, x: "current", y: "voltage", r: 2, symbol: "triangle2", stroke: "darkgoldenrod", strokeWidth: 0.8, tip: {anchor: "top-left", textPadding: 4, strokeOpacity: 0.1, fill: "darkgoldenrod", fillOpacity: 0.1}, title: (d) => `小米35W △\n电压：${d.voltage}V\n电流：${d.current}A` }),
     Plot.ruleY([0]),
     Plot.dotY(["小米35W"], {x: 2.4, y: 4.4, symbol: "triangle2", stroke: "darkgoldenrod"}),
     Plot.text(["  小米35W 1A1C + 华为3A线"], {x: 2.4, y: 4.4, textAnchor: "start"}),
